@@ -19,6 +19,7 @@
 
 ## 轮播图：
  v-show="" 是否隐藏
+ <pre><code>
  <div class = "banner">
      <img  v-for = "(v,i) in imgArr" :key="i"    :src="v"  v-show="n==0">
      <div>
@@ -31,7 +32,9 @@
         </ul>
     </div>
 </div>
-‘’‘ export default {
+</code> </pre> 
+<pre><code>
+export default {
      name: 'Home',
      data(){
          return {
@@ -68,4 +71,5 @@
      destroyed:function(){ //销毁
          cleanInterval(this.timer)
      }
-}’‘’
+}
+</code></pre>
