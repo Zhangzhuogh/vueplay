@@ -19,26 +19,23 @@
 
 ## 轮播图：
 >> v-show="" 是否隐藏
-<pre>
-    <code>
-       <div class = "banner">
-           <img  v-for = "(v,i) in imgArr" :key="i"    :src="v"  v-show="n==0">
-           <div>
-              <ul>
-                  <li :class = "n==i?'selected':''" v-for="(v,i) in imgArr"></li>
-                  <li class = "selected"></li>
-                  <li class = "selected"></li>
-                  <li class = "selected"></li>
+   <div class = "banner">
+       <img  v-for = "(v,i) in imgArr" :key="i"    :src="v"  v-show="n==0">
+       <div>
+          <ul>
+              <li :class = "n==i?'selected':''" v-for="(v,i) in imgArr"></li>
+              <li class = "selected"></li>
+              <li class = "selected"></li>
+              <li class = "selected"></li>
 
-              </ul>
-          </div>
+          </ul>
       </div>
-   </code>
-</pre>
+  </div>
 export default {
      name: 'Home',
      data(){
          return {
+           ...
              <!-- 清除定时器 -->
              timer: null;
              n:0,
@@ -53,6 +50,7 @@ export default {
                  require('../assets/img/2.jpg'),
                  require('../assets/img/3.jpg')
              ]
+             ....
          }
      },
      methods:{
