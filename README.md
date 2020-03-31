@@ -18,7 +18,7 @@
 ### ：style = “{background:list.color}”样式时候是键值对，所以需要花括号
 
 ## 轮播图：
->> v-show="" 是否隐藏
+>>> v-show="" 是否隐藏
    <div class = "banner">
        <img  v-for = "(v,i) in imgArr" :key="i"    :src="v"  v-show="n==0">
        <div>
@@ -31,11 +31,11 @@
           </ul>
       </div>
   </div>
+ <pre><code>
 export default {
      name: 'Home',
      data(){
          return {
-           ...
              <!-- 清除定时器 -->
              timer: null;
              n:0,
@@ -50,7 +50,6 @@ export default {
                  require('../assets/img/2.jpg'),
                  require('../assets/img/3.jpg')
              ]
-             ....
          }
      },
      methods:{
@@ -71,3 +70,4 @@ export default {
          cleanInterval(this.timer)
      }
 }
+</code></pre>
