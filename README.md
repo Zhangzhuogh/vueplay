@@ -19,7 +19,7 @@
 
 ## 轮播图：
 >> v-show="" 是否隐藏
- <div class = "banner">
+ '''<div class = "banner">
      <img  v-for = "(v,i) in imgArr" :key="i"    :src="v"  v-show="n==0">
      <div>
         <ul>
@@ -30,7 +30,7 @@
 
         </ul>
     </div>
-</div>
+</div>'''
 export default {
      name: 'Home',
      data(){
