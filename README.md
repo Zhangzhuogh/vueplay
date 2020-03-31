@@ -18,7 +18,7 @@
 ### ：style = “{background:list.color}”样式时候是键值对，所以需要花括号
 
 ## 轮播图：
->> v-show="" 是否隐藏
+ v-show="" 是否隐藏
  <div class = "banner">
      <img  v-for = "(v,i) in imgArr" :key="i"    :src="v"  v-show="n==0">
      <div>
@@ -31,7 +31,7 @@
         </ul>
     </div>
 </div>
-export default {
+‘’‘ export default {
      name: 'Home',
      data(){
          return {
@@ -68,4 +68,4 @@ export default {
      destroyed:function(){ //销毁
          cleanInterval(this.timer)
      }
-}
+}’‘’
