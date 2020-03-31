@@ -19,18 +19,22 @@
 
 ## 轮播图：
 >> v-show="" 是否隐藏
- '''<div class = "banner">
-     <img  v-for = "(v,i) in imgArr" :key="i"    :src="v"  v-show="n==0">
-     <div>
-        <ul>
-            <li :class = "n==i?'selected':''" v-for="(v,i) in imgArr"></li>
-            <li class = "selected"></li>
-            <li class = "selected"></li>
-            <li class = "selected"></li>
+<pre>
+    <code>
+       <div class = "banner">
+           <img  v-for = "(v,i) in imgArr" :key="i"    :src="v"  v-show="n==0">
+           <div>
+              <ul>
+                  <li :class = "n==i?'selected':''" v-for="(v,i) in imgArr"></li>
+                  <li class = "selected"></li>
+                  <li class = "selected"></li>
+                  <li class = "selected"></li>
 
-        </ul>
-    </div>
-</div>'''
+              </ul>
+          </div>
+      </div>
+   </code>
+</pre>
 export default {
      name: 'Home',
      data(){
