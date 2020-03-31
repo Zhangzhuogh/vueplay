@@ -56,7 +56,7 @@ export default {
      name: 'Home',
      data(){
          return {
-             <!-- 清除定时器 -->
+             <!-- 清除定时器  -->   
              timer: null;
              n:0,
              lists:[
