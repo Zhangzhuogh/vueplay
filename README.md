@@ -32,14 +32,13 @@
         </ul>
     </div>
 </div>
-</code> </pre> 
-<pre><code>
+
 export default {
      name: 'Home',
      data(){
          return {
              <!-- 清除定时器 -->
-             timer: null;
+             timer: null,
              n:0,
              lists:[
                  {title:'',icon:'',color:''},
@@ -73,3 +72,13 @@ export default {
      }
 }
 </code></pre>
+
+# 4月1号本次课程内容
+
+## 组件的定义及传参
+
+## Axios 数据请求及渲染
+
+## 路由传参
+
+## 详情页展示
